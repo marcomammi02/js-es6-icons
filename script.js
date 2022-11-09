@@ -112,3 +112,15 @@ const arrIcons = [
 		color: 'blue'
 	}
 ];
+
+const eleContainer = document.querySelector('.container');
+
+for (let i = 0; i < arrIcons.length; i++) {
+    const eleIconBox = document.createElement('div');
+    eleIconBox.classList.add('icon-box');
+    eleIconBox.innerHTML = `
+    <i class="fa-solid ${arrIcons[i].prefix}${arrIcons[i].name}"></i>
+    <p class="icon-name">${arrIcons[i].name.toLocaleUpperCase()}</p>
+    `;
+    eleContainer.append(eleIconBox);
+}
