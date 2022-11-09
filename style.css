@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Header */
+h1 {
+    color: #0095ff;
+    font-size: 3rem;
+    margin: 1rem 2rem 0;
+}
+
+.select-section {
+    background-color: #0095ff;
+    text-align: center;
+    padding: 1rem;
+}
+
+label {
+    color: #ffffff;
+    margin-right: .5rem;
+}
+
+select {
+    border-radius: 8px;
+}

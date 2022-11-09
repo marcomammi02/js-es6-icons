@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,35 @@
     <title>FontIcons</title>
 
 
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
     <!-- main js -->
     <script src="script.js" defer></script>
+
+
+    <!-- main style -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+    <header>
+        <div class="title-section">
+            <h1>FontIcons</h1>
+        </div>
+        <div class="select-section">
+            <label for="category">FILTRA PER TIPO : </label>
+            <select name="category" id="categoty-select">
+                <option value="all">All</option>
+                <option value="animal">Animal</option>
+                <option value="vegetable">Vegetable</option>
+                <option value="user">User</option>
+            </select>
+        </div>
+    </header>
+
 </body>
 </html>
