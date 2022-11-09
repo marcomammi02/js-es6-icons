@@ -4,112 +4,112 @@ const arrIcons = [
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		color: 'orange'
+		color: 'blue'
 	},
 	{
 		name: 'crow',
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		color: 'orange'
+		color: 'blue'
 	},
 	{
 		name: 'dog',
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		color: 'orange'
+		color: 'blue'
 	},
 	{
 		name: 'dove',
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		color: 'orange'
+		color: 'blue'
 	},
 	{
 		name: 'dragon',
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		color: 'orange'
+		color: 'blue'
 	},
 	{
 		name: 'horse',
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		color: 'orange'
+		color: 'blue'
 	},
 	{
 		name: 'hippo',
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		color: 'orange'
+		color: 'blue'
 	},
 	{
 		name: 'fish',
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		color: 'orange'
+		color: 'blue'
 	},
 	{
 		name: 'carrot',
 		prefix: 'fa-',
 		type: 'vegetable',
 		family: 'fas',
-		color: 'green'
+		color: 'orange'
 	},
 	{
 		name: 'apple-alt',
 		prefix: 'fa-',
 		type: 'vegetable',
 		family: 'fas',
-		color: 'green'
+		color: 'orange'
 	},
 	{
 		name: 'lemon',
 		prefix: 'fa-',
 		type: 'vegetable',
 		family: 'fas',
-		color: 'green'
+		color: 'orange'
 	},
 	{
 		name: 'pepper-hot',
 		prefix: 'fa-',
 		type: 'vegetable',
 		family: 'fas',
-		color: 'green'
+		color: 'orange'
 	},
 	{
 		name: 'user-astronaut',
 		prefix: 'fa-',
 		type: 'user',
 		family: 'fas',
-		color: 'blue'
+		color: 'purple'
 	},
 	{
 		name: 'user-graduate',
 		prefix: 'fa-',
 		type: 'user',
 		family: 'fas',
-		color: 'blue'
+		color: 'purple'
 	},
 	{
 		name: 'user-ninja',
 		prefix: 'fa-',
 		type: 'user',
 		family: 'fas',
-		color: 'blue'
+		color: 'purple'
 	},
 	{
 		name: 'user-secret',
 		prefix: 'fa-',
 		type: 'user',
 		family: 'fas',
-		color: 'blue'
+		color: 'purple'
 	}
 ];
 
@@ -119,8 +119,9 @@ for (let i = 0; i < arrIcons.length; i++) {
     const eleIconBox = document.createElement('div');
     eleIconBox.classList.add('icon-box');
     eleIconBox.innerHTML = `
-    <i class="fa-solid ${arrIcons[i].prefix}${arrIcons[i].name}"></i>
+    <i class="fa-solid ${arrIcons[i].prefix}${arrIcons[i].name}" style="color: ${arrIcons[i].color}"></i>
     <p class="icon-name">${arrIcons[i].name.toLocaleUpperCase()}</p>
     `;
+
     eleContainer.append(eleIconBox);
 }
